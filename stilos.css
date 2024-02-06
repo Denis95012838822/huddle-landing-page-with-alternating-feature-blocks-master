@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Pink: hsl(322, 100%, 66%);
+
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+
+    --font-Open: 'Open Sans', sans-serif;
+    --font-Poppins: 'Poppins', sans-serif;
+}
+body{
+    font-size: 18px;
+}
+
+
+.section1{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-image: url('./images/bg-hero-mobile.svg');
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+.hero__logo{
+    width: 40%;
+}
+.hero__img{
+    width: 100%;
+}
+.hero__cta{
+    background-color: white;
+    text-decoration: none;
+    color: var(--Very-Dark-Cyan);
+    font-size: 10px;
+    font-family: var(--font-Poppins);
+
+    padding: 5px 20px;
+    margin-right: 5px;
+    border-radius: 30px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.178);
+}
+.section1__textos{
+    text-align: center;
+    margin: 120px 0 70px 0;
+    font-family: var(--font-Poppins);
+    color: var(--Very-Dark-Cyan);
+}
+.section1__textos__titulo{
+    padding-bottom: 20px;
+}
+.section1__textos__parrafo{
+    font-family: var(--font-Open);
+    margin-bottom: 40px;
+}
+.section1__textos__cta{
+    background-color: var(--Pink);
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 60px;
+    border-radius: 30px;
+}
+.section__card{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0;
+    gap: 30px;
+}
+.card{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.178);
+    border-radius: 10px;
+}
+.card__img{
+    width: 80%;
+    margin: 50px 10px;
+}
+.card__text{
+    margin: 0 20px;
+    margin-bottom: 40px;
+}
+.titulo{
+    font-family: var(--font-Poppins);
+    font-size: 1.4rem;
+    color: var(--Very-Dark-Cyan);
+    margin-bottom: 20px;
+}
+.parrafo{
+    font-family: var(--font-Open);
+    font-size: 1rem;
+    color: var(--Grayish-Blue)
+}
+.card__final{
+    width: 95%;
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.178);
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: -60px;
+    background-color: white;
+}
+.card__final__titulo{
+    font-size: 1.2rem;
+    font-family: var(--font-Poppins);
+    color: var(--Very-Dark-Cyan);
+    padding-bottom: 30px;
+}
+.card__final__cta{
+    background-color: var(--Pink);
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-Poppins);
+    font-size: 14px;
+    padding: 10px 60px;
+    border-radius: 30px; 
+}
+footer{
+    width: 100%;
+    background-color: var(--Very-Dark-Cyan);
+    position: absolute;
+    z-index: -1;
+}
+.footer__container{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    color: var(--Very-Pale-Cyan);
+    font-family: var(--font-Open);
+    font-size: 14px;
+}
+.contacto{
+    margin-bottom: 50px;
+}
+.textos__footer{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin: 20px 0;
+}
+.img__icon{
+    width: 20px;
+    height: 20px;
+}
+
+.textos{
+    margin: 20px 0;
+}
+.textos:hover{
+    cursor: pointer;
+}
+.redes:hover{
+    cursor: pointer;
+}
+.redes__social{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.final{
+    text-align: center;
+    font-size: .8em;
+    color: var(--Very-Pale-Cyan);
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+@media (min-width:850px){
+    .flex{
+        display: flex;
+        align-items: center;   
+    }
+    .hero__img{
+        width: 60%;
+    }
+    .section1__textos{
+        margin: 0;
+        padding: 0;
+        width: 40%;
+        text-align: start;
+    }
+    .hero__logo{
+        width: 10%;
+    }
+    .card{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .card-invert{
+        flex-direction: row;
+    }
+    .card__text{
+        text-align: start;
+        line-height: 1.5;
+        margin: 0 100px;
+    }
+    .card__img{
+        margin: 20px;
+    }
+    .footer__flex{
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+    }
+    .contacto{
+        width: 25%;
+    }
+    .redes__social{
+        margin: 20px;
+    }
+    .final{
+        text-align: end;
+        margin-top: 0;
+        margin-bottom: 50px;
+        margin-right: 100px;
+    }
+}
